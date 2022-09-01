@@ -5,11 +5,13 @@ import java.sql.Timestamp;
 public class BoardVO {
 
 	private int num;
-	private int pass;
-	private int name;
-	private int email;
-	private int title;
+	private String name;
+	private String email;
+	private String pass;
+	private String title;
 	private String content;
+	private int readcount;
+	private Timestamp writedate;
 
 	public int getNum() {
 		return num;
@@ -19,35 +21,35 @@ public class BoardVO {
 		this.num = num;
 	}
 
-	public int getPass() {
-		return pass;
-	}
-
-	public void setPass(int pass) {
-		this.pass = pass;
-	}
-
-	public int getName() {
+	public String getName() {
 		return name;
 	}
 
-	public void setName(int name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public int getEmail() {
+	public String getEmail() {
 		return email;
 	}
 
-	public void setEmail(int email) {
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public int getTitle() {
+	public String getPass() {
+		return pass;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
+	public String getTitle() {
 		return title;
 	}
 
-	public void setTitle(int title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 
@@ -74,8 +76,4 @@ public class BoardVO {
 	public void setWritedate(Timestamp writedate) {
 		this.writedate = writedate;
 	}
-
-	private int readcount;
-	private Timestamp writedate;
-
 }
