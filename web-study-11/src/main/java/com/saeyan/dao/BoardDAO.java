@@ -26,7 +26,7 @@ public class BoardDAO {
 	public List<BoardVO> selectAllBoards() {
 		String sql = "select * from bboard order by num desc";
 
-		List<BoardVO> list = new ArrayList<BoardVO>();
+		List<BoardVO> list = new ArrayList<>();
 		Connection conn = null;
 		Statement stmt = null;
 		ResultSet rs = null;
@@ -98,6 +98,7 @@ public class BoardDAO {
 		}
 	}
 
+	//----------조회수-------------------------------
 	public void updateReadCount(String num) {
 		String sql = "update bboard set readcount= readcount+1 where num=?";
 
