@@ -120,7 +120,7 @@ public class BoardDAO {
 	}
 
 	public BoardVO selectOneBoardByNum(String num) {
-		String sql = "select * from bborad where num = ?";
+		String sql = "select * from bboard where num = ?";
 
 		BoardVO bVo = null;
 		Connection conn = null;
